@@ -10,9 +10,9 @@ const HomePage = () => {
         <div className="min-h-[100vh] w-[100vw] px-8">
             <VideoBackground />
             {/* <Menu /> */}
-            <div className="flex flex-col lg:flex-row pt-5">
-                <h1 className="text-6xl font-normal text-slate-400">Over a long period of work we have provided hundreds of thousands of eye care services</h1>
-                <div className="flex flex-col mt-4">
+            <div className="flex flex-col lg:flex-row pt-6">
+                <h1 className="text-4xl font-bold flex leading-[49px] text-slate-300">Over a long period of work we have provided hundreds of thousands of eye care services</h1>
+                <div className="flex flex-col mt-6">
                     <AvatarGroup max={5} className="w-fit  flex justify-start">
                         <Avatar alt="Remy Sharp" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdd7vPRNLgPIDeWNP3WkSnjFfVj5quhQWHDQ&usqp=CAU" />
                         <Avatar alt="Travis Howard" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoaPtfg1Ywdhf1Jw-NJVqHixTURHQv2mLoWg&usqp=CAU" />
