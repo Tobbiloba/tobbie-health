@@ -37,7 +37,7 @@ const VideoBackground = () => {
         progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
     };
     return (
-        <div style={styles.video} className='blur-sm'>
+        <div style={styles.video} >
             <div><img src='https://c1.wallpaperflare.com/preview/553/252/904/eye-shadow-light-face.jpg' className='z-[-1] h-[100vh] w-[150vw] flex md:hidden lg:hidden' /></div>
             <div className="w-[100vw] h-[100vh] hidden md:flex lg:flex">
                 <Swiper
@@ -55,10 +55,10 @@ const VideoBackground = () => {
                     onAutoplayTimeLeft={onAutoplayTimeLeft}
                     className="mySwiper"
                 >
-                    <SwiperSlide><img src='https://vial.com/wp-content/uploads/2022/09/Stocksy_txpe7180ac2JpV300_Medium_3827840.jpg' className='min-w-[100vw] min-h-[100vh]' /></SwiperSlide>
-                    <SwiperSlide><img src='https://i.dailymail.co.uk/i/newpix/2018/05/02/23/4BC9163C00000578-0-image-a-64_1525301824615.jpg' className='min-w-[100vw] min-h-[100vh]' /></SwiperSlide>
-                    <SwiperSlide><img src='https://vial.com/wp-content/uploads/2022/09/Stocksy_txpe7180ac2JpV300_Medium_3827840.jpg' className='min-w-[100vw] min-h-[100vh]' /></SwiperSlide>
-                    <SwiperSlide><img src='https://previews.123rf.com/images/jpbarcelos/jpbarcelos1803/jpbarcelos180300364/99001087-bright-light-in-macro-shot-of-beautiful-brown-eyes-male-caucasian.jpg' className='min-w-[100vw] min-h-[100vh]' /></SwiperSlide>
+                    <SwiperSlide className='blur-sm'><img src='https://vial.com/wp-content/uploads/2022/09/Stocksy_txpe7180ac2JpV300_Medium_3827840.jpg' className='min-w-[100vw] min-h-[100vh]' /></SwiperSlide>
+                    {/* <SwiperSlide className='blur-sm'><img src='https://i.dailymail.co.uk/i/newpix/2018/05/02/23/4BC9163C00000578-0-image-a-64_1525301824615.jpg' className='min-w-[100vw] min-h-[100vh]' /></SwiperSlide> */}
+                    {/* <SwiperSlide className='blur-sm'><img src='https://vial.com/wp-content/uploads/2022/09/Stocksy_txpe7180ac2JpV300_Medium_3827840.jpg' className='min-w-[100vw] min-h-[100vh]' /></SwiperSlide> */}
+                    {/* <SwiperSlide className='blur-sm'><img src='https://previews.123rf.com/images/jpbarcelos/jpbarcelos1803/jpbarcelos180300364/99001087-bright-light-in-macro-shot-of-beautiful-brown-eyes-male-caucasian.jpg' className='min-w-[100vw] min-h-[100vh]' /></SwiperSlide> */}
                     <div className="autoplay-progress" slot="container-end">
                         <svg viewBox="0 0 48 48" ref={progressCircle}>
                             <circle cx="24" cy="24" r="20"></circle>

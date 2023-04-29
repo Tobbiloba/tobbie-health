@@ -151,23 +151,24 @@ const Menu = (props) => {
     return (
         <div>
             {/* mobile menu */}
-            <div className="flex flex-row justify-between items-center px-6 h-[120px] lg:hidden ">
+            <div className="flex flex-row justify-between px-8 items-center h-[120px] lg:hidden ">
                 <div className="flex flex-row text-center">
                     <img src={logo} alt="Logo" className="w-[100px] h-[80px]" />
                 </div>
-                <div>
+                {!showMenu && <div>
                     <AppsIcon
                         style={{ color: 'white', fontSize: '52px', cursor: 'pointer' }}
                         className={`border rounded-full p-2 hover:bg-white ${showMenu ? 'text-black' : ''}`}
                         onClick={toggleMenu}
                     />
-                </div>
+                </div>}
+
             </div>
 
             {showMenu && (
-                <div className="flex flex-col justify-between fixed bottom-0 min-h-[60vh] w-[100vw] pb-12 transition ease-in-out delay-1000 backdrop-brightness-50 bg-white/50">
-                    <div className="flex item-center justify-center backdrop-brightness-50 bg-white/50 cursor-pointer" onClick={toggleMenu}>
-                        <ArrowBackIosNewIcon className="-rotate-90 py-1" style={{ color: 'white', fontSize: '42px' }} />
+                <div className="flex flex-col justify-between fixed top-0 left-0 min-h-[100vh] w-[80vw] pb-12 transition ease-in-out delay-1000 backdrop-brightness-50 bg-white/50">
+                    <div className="flex item-center justify-end px-3 backdrop-brightness-50 bg-white/50 cursor-pointer" onClick={toggleMenu}>
+                        <ArrowBackIosNewIcon className=" py-1" style={{ color: 'white', fontSize: '42px' }} />
                     </div>
                     <div className="border border-red-500 flex flex-col text-center items-center justify-center text-white gap-4">
                         <a href="#home" className={props.activeSection === 'home' ? 'text-3xl border w-fit px-4 py-2 bg-slate-500 rounded-2xl border-white' : 'text-xl'} onClick={handleNavClick}>Home</a>
