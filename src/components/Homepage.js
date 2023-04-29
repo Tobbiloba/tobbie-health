@@ -1,11 +1,11 @@
-import Menu from "./Menu";
+// import Menu from "./Menu";
 import VideoBackground from "./VideoBackground";
 
 const HomePage = () => {
     return (
-        <div>
+        <div className="min-h-[100vh] w-[100vw]">
             <VideoBackground />
-            <Menu />
+            {/* <Menu /> */}
             <h1 className="text-5xl">Homepage</h1>
         </div>
 
