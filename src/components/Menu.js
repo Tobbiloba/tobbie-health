@@ -151,7 +151,7 @@ const Menu = (props) => {
     return (
         <div>
             {/* mobile menu */}
-            <div className="flex flex-row justify-between px-8 items-center h-[120px] lg:hidden ">
+            <div className="flex flex-row justify-between px-6 items-center h-[120px] lg:hidden ">
                 <div className="flex flex-row text-center">
                     <img src={logo} alt="Logo" className="w-[100px] h-[80px]" />
                 </div>
