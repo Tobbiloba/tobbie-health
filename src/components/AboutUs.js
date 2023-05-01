@@ -29,27 +29,27 @@ function AboutUs() {
                         <h1 className='lg:w-[13vw] text-xl text-slate-600 font-bold text-left'>Laser vision correction of a complexity at a fixed price.</h1>
                     </div>
                     <div className='grid grid-cols-2'>
-                        <div className='border mb-16 border-white border-b-slate-500'>
+                        <div className='border mb-16 px-2 border-white border-b-slate-500'>
                             <h1 className='text-2xl font-bold text-slate-700'>01</h1>
                             <p className='mt-4 font-bold'>We use modern <br />equipment</p>
                         </div>
-                        <div className='border mb-16 border-white border-b-slate-500'>
+                        <div className='border mb-16 px-2 border-white border-b-slate-500'>
                             <h1 className='text-2xl font-bold text-slate-700'>02</h1>
                             <p className='mt-4 font-bold'>The result surpasses all expectations</p>
                         </div>
-                        <div className='border mb-16 border-white border-b-slate-500'>
+                        <div className='border mb-16 px-2 border-white border-b-slate-500'>
                             <h1 className='text-2xl font-bold text-slate-700'>03</h1>
                             <p className='mt-4 font-bold'>We have the best professionals working</p>
                         </div>
-                        <div className='border mb-16 border-white border-b-slate-500'>
+                        <div className='border mb-16 px-2 border-white border-b-slate-500'>
                             <h1 className='text-2xl font-bold text-slate-700'>04</h1>
                             <p className='mt-4 font-bold'>We train our own specialists</p>
                         </div>
-                        <div className='border mb-16 border-white border-b-slate-500'>
+                        <div className='border mb-16 px-2 border-white border-b-slate-500'>
                             <h1 className='text-2xl font-bold text-slate-700'>05</h1>
                             <p className='mt-4 font-bold'>Individual contract with the client</p>
                         </div>
-                        <div className='border mb-16 border-white border-b-slate-500'>
+                        <div className='border mb-16 px-2 border-white border-b-slate-500'>
                             <h1 className='text-2xl font-bold text-slate-700'>06</h1>
                             <p className='mt-4 font-bold'>We have the European certifications</p>
                         </div>
