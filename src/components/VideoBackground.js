@@ -21,9 +21,9 @@ const styles = {
         position: 'fixed',
         right: 0,
         bottom: 0,
-        minWidth: '100%',
+        // minWidth: '100%',
         minHeight: '100%',
-        width: 'auto',
+        width: '100vw',
         height: 'auto',
         zIndex: '-1',
     },
@@ -52,13 +52,13 @@ const VideoBackground = () => {
                     }}
                     // navigation={true}
                     modules={[Autoplay, Pagination, Navigation]}
-                    onAutoplayTimeLeft={onAutoplayTimeLeft}
+                    // onAutoplayTimeLeft={onAutoplayTimeLeft}
                     className="mySwiper"
                 >
-                    <SwiperSlide className='blur-sm'><img src='https://vial.com/wp-content/uploads/2022/09/Stocksy_txpe7180ac2JpV300_Medium_3827840.jpg' className='min-w-[100vw] min-h-[100vh]' /></SwiperSlide>
-                    {/* <SwiperSlide className='blur-sm'><img src='https://i.dailymail.co.uk/i/newpix/2018/05/02/23/4BC9163C00000578-0-image-a-64_1525301824615.jpg' className='min-w-[100vw] min-h-[100vh]' /></SwiperSlide> */}
-                    {/* <SwiperSlide className='blur-sm'><img src='https://vial.com/wp-content/uploads/2022/09/Stocksy_txpe7180ac2JpV300_Medium_3827840.jpg' className='min-w-[100vw] min-h-[100vh]' /></SwiperSlide> */}
-                    {/* <SwiperSlide className='blur-sm'><img src='https://previews.123rf.com/images/jpbarcelos/jpbarcelos1803/jpbarcelos180300364/99001087-bright-light-in-macro-shot-of-beautiful-brown-eyes-male-caucasian.jpg' className='min-w-[100vw] min-h-[100vh]' /></SwiperSlide> */}
+                    <SwiperSlide className=''><img src='https://vial.com/wp-content/uploads/2022/09/Stocksy_txpe7180ac2JpV300_Medium_3827840.jpg' className='w-[100vw] min-h-[100vh]' /></SwiperSlide>
+                    {/* <SwiperSlide className=''><img src='https://i.dailymail.co.uk/i/newpix/2018/05/02/23/4BC9163C00000578-0-image-a-64_1525301824615.jpg' className='min-w-[100vw] min-h-[100vh]' /></SwiperSlide> */}
+                    {/* <SwiperSlide className=''><img src='https://dmei.org/wp-content/uploads/2020/05/brown-eye_feature-image.jpg' className='w-[100vw] min-h-[100vh]' /></SwiperSlide> */}
+                    {/* <SwiperSlide className=''><img src='https://previews.123rf.com/images/jpbarcelos/jpbarcelos1803/jpbarcelos180300364/99001087-bright-light-in-macro-shot-of-beautiful-brown-eyes-male-caucasian.jpg' className='min-w-[100vw] min-h-[100vh]' /></SwiperSlide> */}
                     <div className="autoplay-progress" slot="container-end">
                         <svg viewBox="0 0 48 48" ref={progressCircle}>
                             <circle cx="24" cy="24" r="20"></circle>

@@ -15,13 +15,14 @@ function Dropdown() {
     return (
         <Box sx={{ minWidth: 120 }}>
             <FormControl fullWidth>
-                <InputLabel id="demo-simple-select-label">🇺🇸 ENG</InputLabel>
+                {/* <InputLabel id="demo-simple-select-label" className='text-white'>🇺🇸 ENG</InputLabel> */}
                 <Select
                     labelId="demo-simple-select-label"
                     id="demo-simple-select"
                     value={age}
                     label="Age"
                     onChange={handleChange}
+                    className='text-white'
                 >
                     <MenuItem value={10}>🇺🇸 ENG</MenuItem>
                     <MenuItem value={20}>Twenty</MenuItem>

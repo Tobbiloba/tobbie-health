@@ -163,27 +163,57 @@ const Menu = (props) => {
                     />
                 </div>}
 
+                {/* </div> */}
+                {/* <div className='flex lg::'> */}
+                {showMenu && (
+                    <div className="flex flex-col lg:hidden justify-between fixed top-0 left-0 min-h-[100vh] w-[80vw] pb-12 transition ease-in-out delay-1000 backdrop-brightness-50 bg-white/50">
+                        <div className="flex item-center justify-end px-3 backdrop-brightness-50 bg-white/50 cursor-pointer" onClick={toggleMenu}>
+                            <ArrowBackIosNewIcon className=" py-1" style={{ color: 'white', fontSize: '42px' }} />
+                        </div>
+                        <div className="border border-red-500 flex flex-col text-center items-center justify-center text-white gap-4">
+                            <a href="#home" className={props.activeSection === 'home' ? 'text-3xl border w-fit px-4 py-2 bg-slate-500 rounded-2xl border-white' : 'text-xl'} onClick={handleNavClick}>Home</a>
+                            <a href="#about" className={props.activeSection === 'about' ? 'text-3xl border w-fit px-4 py-2 bg-slate-500 rounded-2xl border-white' : 'text-xl'} onClick={handleNavClick}>About Us</a>
+                            <a href="#specialists" className={props.activeSection === 'specialists' ? 'active' : ''} onClick={handleNavClick}>Specialists</a>
+                            <a href="#doctors" className={props.activeSection === 'doctors' ? 'active' : ''} onClick={handleNavClick}>Doctors</a>
+                            <a href="#prices" className={props.activeSection === 'prices' ? 'active' : ''} onClick={handleNavClick}>Prices</a>
+                            <a href="#contact" className={props.activeSection === 'contact' ? 'active' : ''} onClick={handleNavClick}>Contact Us</a>
+                        </div>
+                        <div className='flex flex-row justify-evenly'>
+                            <Dropdown />
+                            <button className='border py-2 px-5 rounded-2xl cursor-pointer'>+234 70 8455 7988 <ArrowRightAltIcon /></button>
+                        </div>
+                    </div>
+                )}
             </div>
 
-            {showMenu && (
-                <div className="flex flex-col justify-between fixed top-0 left-0 min-h-[100vh] w-[80vw] pb-12 transition ease-in-out delay-1000 backdrop-brightness-50 bg-white/50">
-                    <div className="flex item-center justify-end px-3 backdrop-brightness-50 bg-white/50 cursor-pointer" onClick={toggleMenu}>
-                        <ArrowBackIosNewIcon className=" py-1" style={{ color: 'white', fontSize: '42px' }} />
-                    </div>
-                    <div className="border border-red-500 flex flex-col text-center items-center justify-center text-white gap-4">
-                        <a href="#home" className={props.activeSection === 'home' ? 'text-3xl border w-fit px-4 py-2 bg-slate-500 rounded-2xl border-white' : 'text-xl'} onClick={handleNavClick}>Home</a>
-                        <a href="#about" className={props.activeSection === 'about' ? 'text-3xl border w-fit px-4 py-2 bg-slate-500 rounded-2xl border-white' : 'text-xl'} onClick={handleNavClick}>About Us</a>
-                        <a href="#specialists" className={props.activeSection === 'specialists' ? 'active' : ''} onClick={handleNavClick}>Specialists</a>
-                        <a href="#doctors" className={props.activeSection === 'doctors' ? 'active' : ''} onClick={handleNavClick}>Doctors</a>
-                        <a href="#prices" className={props.activeSection === 'prices' ? 'active' : ''} onClick={handleNavClick}>Prices</a>
-                        <a href="#contact" className={props.activeSection === 'contact' ? 'active' : ''} onClick={handleNavClick}>Contact Us</a>
-                    </div>
-                    <div className='flex flex-row justify-evenly'>
-                        <Dropdown />
-                        <button className='border py-2 px-5 rounded-2xl cursor-pointer'>+234 70 8455 7988 <ArrowRightAltIcon /></button>
+
+            {/* Web View Menu */}
+            <div className='hidden lg:flex lg:flex-row lg:justify-between border px-[7.5vw] w-[100vw] py-3'>
+                <div className='flex'>
+                    <img src={logo} alt="Logo" className="w-[80px] h-[60px]" />
+                </div>
+                <div className='flex items-center justify-center'>
+                    <AppsIcon
+                        style={{ color: 'white', fontSize: '56px', cursor: 'pointer' }}
+                        className={`border rounded-full p-2 mr-6 hover:bg-white ${showMenu ? 'text-black' : ''}`}
+                        onClick={toggleMenu}
+                    />
+                    <div className='flex justify-center items-center'>
+                        <a href="#home" className={props.activeSection === 'home' ? 'text-xl mr-4 w-fit px-2 py-1 text-white bg-blue-500 h-fit rounded-2xl' : 'text-white text-xl mr-4'} onClick={handleNavClick}>Home</a>
+                        <a href="#about" className={props.activeSection === 'about' ? 'text-xl mr-3 w-fit px-2 py-1 text-white bg-blue-500 h-fit rounded-2xl' : 'text-white text-xl mr-4'} onClick={handleNavClick}>About Us</a>
+                        <a href="#specialists" className={props.activeSection === 'specialists' ? 'text-xl mr-3 w-fit px-2 py-1 text-white bg-blue-500 h-fit rounded-2xl' : 'text-white text-xl mr-4'} onClick={handleNavClick}>Specialists</a>
+                        <a href="#doctors" className={props.activeSection === 'doctors' ? 'text-xl mr-3 w-fit px-2 py-1 text-white bg-blue-500 h-fit rounded-2xl' : 'text-white text-xl mr-4'} onClick={handleNavClick}>Doctors</a>
+                        <a href="#prices" className={props.activeSection === 'prices' ? 'text-xl mr-3 w-fit px-2 py-1 text-white bg-blue-500 h-fit rounded-2xl' : 'text-white text-xl mr-4'} onClick={handleNavClick}>Prices</a>
+                        <a href="#contact" className={props.activeSection === 'contact' ? 'text-xl mr-3 w-fit px-2 py-1 text-white bg-blue-500 h-fit rounded-2xl' : 'text-white text-xl mr-4'} onClick={handleNavClick}>Contact Us</a>
                     </div>
                 </div>
-            )}
+                <div className='flex'>
+                    <Dropdown />
+                    <button className='border border-slate-400 py-2 px-5 rounded-2xl cursor-pointer text-white ml-4'>+234 70 8455 7988 <ArrowRightAltIcon /></button>
+                </div>
+            </div>
+
+
         </div>
     );
 };

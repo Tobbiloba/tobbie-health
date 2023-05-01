@@ -52,7 +52,7 @@ function App() {
 
   useEffect(() => {
     const sections = document.querySelectorAll('section');
-    console.log(sections)
+    // console.log(sections)
     window.addEventListener('scroll', () => {
       let current = '';
       for (let i = 0; i < sections.length; i++) {
