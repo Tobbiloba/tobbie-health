@@ -45,6 +45,7 @@ import React, { useEffect, useState } from 'react';
 import HomePage from "./components/Homepage";
 import Menu from "./components/Menu";
 import AboutUs from './components/AboutUs';
+import Gallery from './components/Gallery';
 
 function App() {
 
@@ -84,6 +85,9 @@ function App() {
       </section>
       <section id="about">
         <AboutUs />
+      </section>
+      <section id="Gallery">
+        <Gallery />
       </section>
     </div>
   );

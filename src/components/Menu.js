@@ -190,7 +190,7 @@ const Menu = (props) => {
             {/* Web View Menu */}
             <div className='hidden lg:flex lg:flex-row lg:justify-between border px-[7.5vw] w-[100vw] py-3'>
                 <div className='flex'>
-                    <img src={logo} alt="Logo" className="w-[80px] h-[60px]" />
+                    <img src={logo} alt="Logo" className="w-[70px] h-[50px]" />
                 </div>
                 <div className='flex items-center justify-center'>
                     <AppsIcon
@@ -199,17 +199,17 @@ const Menu = (props) => {
                         onClick={toggleMenu}
                     />
                     <div className='flex justify-center items-center'>
-                        <a href="#home" className={props.activeSection === 'home' ? 'text-xl mr-4 w-fit px-2 py-1 text-white bg-blue-500 h-fit rounded-2xl' : 'text-white text-xl mr-4'} onClick={handleNavClick}>Home</a>
-                        <a href="#about" className={props.activeSection === 'about' ? 'text-xl mr-3 w-fit px-2 py-1 text-white bg-blue-500 h-fit rounded-2xl' : 'text-white text-xl mr-4'} onClick={handleNavClick}>About Us</a>
-                        <a href="#specialists" className={props.activeSection === 'specialists' ? 'text-xl mr-3 w-fit px-2 py-1 text-white bg-blue-500 h-fit rounded-2xl' : 'text-white text-xl mr-4'} onClick={handleNavClick}>Specialists</a>
-                        <a href="#doctors" className={props.activeSection === 'doctors' ? 'text-xl mr-3 w-fit px-2 py-1 text-white bg-blue-500 h-fit rounded-2xl' : 'text-white text-xl mr-4'} onClick={handleNavClick}>Doctors</a>
-                        <a href="#prices" className={props.activeSection === 'prices' ? 'text-xl mr-3 w-fit px-2 py-1 text-white bg-blue-500 h-fit rounded-2xl' : 'text-white text-xl mr-4'} onClick={handleNavClick}>Prices</a>
-                        <a href="#contact" className={props.activeSection === 'contact' ? 'text-xl mr-3 w-fit px-2 py-1 text-white bg-blue-500 h-fit rounded-2xl' : 'text-white text-xl mr-4'} onClick={handleNavClick}>Contact Us</a>
+                        <a href="#home" className={props.activeSection === 'home' ? ' mr-4 w-fit px-2 py-1 text-white bg-blue-500 h-fit rounded-2xl' : 'text-white  mr-4'} onClick={handleNavClick}>Home</a>
+                        <a href="#about" className={props.activeSection === 'about' ? ' mr-3 w-fit px-2 py-1 text-white bg-blue-500 h-fit rounded-2xl' : 'text-white  mr-4'} onClick={handleNavClick}>About Us</a>
+                        <a href="#specialists" className={props.activeSection === 'specialists' ? ' mr-3 w-fit px-2 py-1 text-white bg-blue-500 h-fit rounded-2xl' : 'text-white  mr-4'} onClick={handleNavClick}>Specialists</a>
+                        <a href="#doctors" className={props.activeSection === 'doctors' ? ' mr-3 w-fit px-2 py-1 text-white bg-blue-500 h-fit rounded-2xl' : 'text-white  mr-4'} onClick={handleNavClick}>Doctors</a>
+                        <a href="#prices" className={props.activeSection === 'prices' ? ' mr-3 w-fit px-2 py-1 text-white bg-blue-500 h-fit rounded-2xl' : 'text-white  mr-4'} onClick={handleNavClick}>Prices</a>
+                        <a href="#contact" className={props.activeSection === 'contact' ? ' mr-3 w-fit px-2 py-1 text-white bg-blue-500 h-fit rounded-2xl' : 'text-white  mr-4'} onClick={handleNavClick}>Contact Us</a>
                     </div>
                 </div>
                 <div className='flex'>
                     <Dropdown />
-                    <button className='border border-slate-400 py-2 px-5 rounded-2xl cursor-pointer text-white ml-4'>+234 70 8455 7988 <ArrowRightAltIcon /></button>
+                    <button className='border border-slate-400 py-2 px-4 rounded-2xl cursor-pointer text-white ml-4'>+234 70 8455 7988 <ArrowRightAltIcon /></button>
                 </div>
             </div>
 

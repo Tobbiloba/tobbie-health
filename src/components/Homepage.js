@@ -9,7 +9,7 @@ const HomePage = () => {
         <div className="min-h-[100vh] w-[100vw] px-6 overflow-x-hidden lg:px-[7.5vw] md:px-[7vw]">
             <VideoBackground />
             <div className="flex flex-col lg:justify-between lg:items-center pr-8 lg:flex-row pt-6 lg:mt-40 ">
-                <h1 className="text-4xl font-bold flex lg:w-[50vw] lg:text-6   xl font-sans lg:text-white lg:font-normal lg:leading-[90px] leading-[49px] text-slate-300">Over a long period of work we have provided hundreds of thousands of eye care services</h1>
+                <h1 className="text-4xl font-bold flex lg:w-[50vw] lg:text-6xl lg:font-bold font-sans lg:text-white lg:font-normal lg:leading-[90px] leading-[49px] text-slate-300">Over a long period of work we have provided hundreds of thousands of eye care services</h1>
                 <div className="flex flex-col mt-8">
                     <AvatarGroup max={5} className="w-fit  flex justify-start">
                         <Avatar alt="Remy Sharp" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdd7vPRNLgPIDeWNP3WkSnjFfVj5quhQWHDQ&usqp=CAU" />
