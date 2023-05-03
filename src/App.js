@@ -46,6 +46,7 @@ import HomePage from "./components/Homepage";
 import Menu from "./components/Menu";
 import AboutUs from './components/AboutUs';
 import Gallery from './components/Gallery';
+import Services from './components/Services';
 
 function App() {
 
@@ -88,6 +89,9 @@ function App() {
       </section>
       <section id="Gallery">
         <Gallery />
+      </section>
+      <section id="Services">
+        <Services />
       </section>
     </div>
   );
