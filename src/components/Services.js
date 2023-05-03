@@ -131,7 +131,7 @@ function Services() {
     };
 
     useEffect(() => {
-        // handleButtonClick()
+        handleButtonClick()
         if (filter === 'all') {
             setData(questions);
         } else {
@@ -166,7 +166,7 @@ function Services() {
                     {/* <ArrowRightIcon /> */}
                 </div>
             </div>
-            <div className='mt-12'>
+            <div className='mt-12 lg:mt-20'>
                 {/* Loader */}
                 <div className={`bg-whitepy-12 ${isTrue ? 'flex justify-center items-center' : 'hidden'}`}>
 
@@ -176,10 +176,10 @@ function Services() {
                 </div>
 
                 {/* Dropdown */}
-                <div className={`bg-white ${!isTrue ? 'flex flex-col' : 'hidden'}`}>
+                <div className={`bg-white  ${!isTrue ? 'flex flex-col lg:justify-end lg:items-end' : 'hidden'}`}>
                     {data.map((item) => {
                         return (
-                            <div key={item.id} className='mb-6 lg:mb-12'>
+                            <div key={item.id} className='mb-6 lg:mb-12 lg:w-[75vw]'>
                                 <Accordion>
                                     <AccordionSummary
                                         expandIcon={<ExpandMoreIcon />}
