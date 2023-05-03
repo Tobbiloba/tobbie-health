@@ -131,7 +131,7 @@ function Services() {
     };
 
     useEffect(() => {
-        handleButtonClick()
+        // handleButtonClick()
         if (filter === 'all') {
             setData(questions);
         } else {
@@ -142,7 +142,7 @@ function Services() {
     console.log(data);
 
     return (
-        <div className='bg-white flex flex-col px-6 lg:px-[7.5vw] pt-12 pb-10'>
+        <div className='bg-white flex flex-col px-6 lg:px-[7.5vw] pt-12 pb-10 md:px-[7vw]'>
             <div className='flex flex-col lg:flex-row lg:justify-between'>
                 <div className='flex flex-col lg:flex-row'>
                     <div className='text-2xl font-bold text-slate-600 flex justify-center'>
@@ -152,10 +152,10 @@ function Services() {
                         <div>
                             <h1 className='text-[16px] flex text-center leading-4 lg:font-medium justify-center font-bold lg:text-5xl lg:text-slate-500 lg:justify-normal lg:text-left '>Excellent services of our clinic</h1>
                         </div>
-                        <div className='flex flex-row justify-between mt-7'>
-                            <button className={` px-5 rounded-2xl  py-2 ${filter === 'all' ? 'bg-blue-500 text-white' : ' border border-blue-500 text-blue-500'}`} onClick={() => handleFilterClick('all')}
+                        <div className='flex flex-row justify-between md:justify-start mt-7'>
+                            <button className={` px-5 rounded-2xl md:mr-6  py-2 ${filter === 'all' ? 'bg-blue-500 text-white' : ' border border-blue-500 text-blue-500'}`} onClick={() => handleFilterClick('all')}
                             >All</button>
-                            <button className={` px-5 rounded-2xl  py-2 ${filter === 'adult' ? 'bg-blue-500 text-white' : 'border border-blue-500 text-blue-500'}`} onClick={() => handleFilterClick('adult')}
+                            <button className={` px-5 rounded-2xl md:mr-6  py-2 ${filter === 'adult' ? 'bg-blue-500 text-white' : 'border border-blue-500 text-blue-500'}`} onClick={() => handleFilterClick('adult')}
                             >For adults</button>
                             <button className={` px-5 rounded-2xl  py-2 ${filter === 'child' ? 'bg-blue-500 text-white' : 'border border-blue-500 text-blue-500'}`} onClick={() => handleFilterClick('child')}
                             >For children</button>
@@ -179,7 +179,7 @@ function Services() {
                 <div className={`bg-white ${!isTrue ? 'flex flex-col' : 'hidden'}`}>
                     {data.map((item) => {
                         return (
-                            <div key={item.id} className='mb-6'>
+                            <div key={item.id} className='mb-6 lg:mb-12'>
                                 <Accordion>
                                     <AccordionSummary
                                         expandIcon={<ExpandMoreIcon />}
@@ -187,11 +187,11 @@ function Services() {
                                         id="panel1a-header"
 
                                     >
-                                        <Typography className="">{item.question}</Typography>
+                                        <Typography className=" md:font-bold md:px-5 lg:py-4"><span className="md:text-xl lg:text-xl lg:text-slate-700 lg:font-bold">{item.question}</span></Typography>
                                     </AccordionSummary>
                                     <AccordionDetails>
-                                        <Typography className='text-slate-400 border border-white border-t-slate-400 pt-2'>
-                                            {item.answer}
+                                        <Typography className='text-slate-400 border md:px-8 lg:py-6 border-white border-t-slate-400 pt-2 lg:px-16'>
+                                            <span className="md:text-[16px] lg:text-[18px] ">{item.answer}</span>
                                         </Typography>
                                     </AccordionDetails>
                                 </Accordion>
