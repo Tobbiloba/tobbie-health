@@ -81,8 +81,8 @@ function App() {
 
   return (
     <div className='lg:max-w-[100vw] w-[100vw] overflow-x-hidden'>
-      {/* <Menu activeSection={activeSection} handleScroll={handleScroll} /> */}
-      {/* <section id="home">
+      <Menu activeSection={activeSection} handleScroll={handleScroll} />
+      <section id="home">
         <HomePage />
       </section>
       <section id="about">
@@ -96,7 +96,7 @@ function App() {
       </section>
       <section id="doctors">
         <Doctors />
-      </section> */}
+      </section>
     </div>
   );
 }
