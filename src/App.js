@@ -80,9 +80,9 @@ function App() {
   };
 
   return (
-    <div className=''>
+    <div className='max-w-[100vw] overflow-x-hidden'>
       <Menu activeSection={activeSection} handleScroll={handleScroll} />
-      <section id="home">
+      {/* <section id="home">
         <HomePage />
       </section>
       <section id="about">
@@ -94,7 +94,7 @@ function App() {
       <section id="specialists">
         <Services />
       </section>
-      {/* <section id="doctors">
+      <section id="doctors">
         <Doctors />
       </section> */}
     </div>
