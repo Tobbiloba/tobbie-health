@@ -80,7 +80,7 @@ function App() {
   };
 
   return (
-    <div className='max-w-[100vw] overflow-x-hidden'>
+    <div className=''>
       <Menu activeSection={activeSection} handleScroll={handleScroll} />
       <section id="home">
         <HomePage />
