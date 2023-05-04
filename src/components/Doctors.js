@@ -33,7 +33,7 @@ const doc = [
         name: "Dr Asher Wolke",
         experience: "2",
         specialities: ['Opthamologist', 'Intern'],
-        img: 'https://m.media-amazon.com/images/M/MV5BNTMzNGNjOGEtYTNlNC00Mjg3LTlhMWUtZGQ1NzM2YTZjMDc0XkEyXkFqcGdeQXVyNDg4ODIzNDU@._V1_.jpg'
+        img: 'https://www.felixhospital.com/sites/default/files/2022-11/dr-dk-gupta.jpg'
     },
     {
         id: 7,

@@ -48,6 +48,7 @@ import AboutUs from './components/AboutUs';
 import Gallery from './components/Gallery';
 import Services from './components/Services';
 import Doctors from './components/Doctors';
+import Appointment from './components/Appointment';
 
 function App() {
 
@@ -96,6 +97,9 @@ function App() {
       </section>
       <section id="doctors">
         <Doctors />
+      </section>
+      <section >
+        <Appointment />
       </section>
     </div>
   );
