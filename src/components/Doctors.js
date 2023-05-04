@@ -50,12 +50,12 @@ function Doctors() {
                 <h1>Doctors</h1>
             </div>
             <div className=' lg:w-fit lg:ml-[5.2vw]'>
-                <div className=''>
+                <div className='lg:flex lg:flex-row lg:justify-between'>
                     <div >
                         <h1 className='text-[16px]  lg:w-[415px] flex text-center leading-4 lg:font-medium justify-center font-bold lg:text-5xl lg:text-slate-500 lg:justify-normal lg:text-left '>Surgeons and opthamologists</h1>
                         <h1 className="mt-4 text-[12px] justify-center flex text-center lg:mt-6 lg:text-[17px] font-bold lg:text-slate-600 lg:w-[250px] lg:text-left lg:justify-start">Our clinic employs only professional physicians. We select the best doctors on a regular basis</h1>
                     </div>
-                    <div className="mt-12 flex item-center justify-center lg:hidden">
+                    <div className="mt-12 flex item-center justify-center ">
                         <button className="border px-6 py-12 rounded-full">All doctors <ArrowRightAltIcon className='ml-2' /></button>
                     </div>
                 </div>
@@ -65,6 +65,9 @@ function Doctors() {
                         {doc.map((doctor) => (
                             <div key={doctor.id} className='mt-6 md:w-[330px] lg:w-[430px] md:mr-4'>
                                 {doctor.img && <img src={doctor.img} className='h-[250px] rounded-2xl w-screen md:w-[340px] md:h-[320px] lg:w-[440px] lg:h-[380px]' alt={doctor.name} />}
+                                {/* <div className='absolute '>
+                                    <ArrowRightAltIcon />
+                                </div> */}
                                 <h2 className='mt-4 text-xl font-bold'>{doctor.name}</h2>
                                 <p className='text-slate-500 mt-2'>Work experience - {doctor.experience} years</p>
                                 {/* <p>Specialities:</p> */}
