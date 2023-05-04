@@ -6,6 +6,8 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { useState, useEffect } from 'react';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import CircularProgress from '@mui/material/CircularProgress';
+// import ArrowRightIcon from '@mui/icons-material/ArrowRight';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import Box from '@mui/material/Box';
 
 
@@ -131,7 +133,7 @@ function Services() {
     };
 
     useEffect(() => {
-        handleButtonClick()
+        // handleButtonClick()
         if (filter === 'all') {
             setData(questions);
         } else {
@@ -139,10 +141,10 @@ function Services() {
         }
     }, [filter, questions]);
 
-    console.log(data);
+    // console.log(data);
 
     return (
-        <div className='bg-white flex flex-col px-6 lg:px-[7.5vw] pt-12 pb-10 md:px-[7vw]'>
+        <div className='bg-white flex flex-col px-6 lg:px-[7.5vw] pt-12 pb-10 md:px-[7vw] max-w-[100vw]'>
             <div className='flex flex-col lg:flex-row lg:justify-between'>
                 <div className='flex flex-col lg:flex-row'>
                     <div className='text-2xl font-bold text-slate-600 flex justify-center'>
@@ -199,6 +201,25 @@ function Services() {
                         )
                     })}
 
+                </div>
+            </div>
+            <div className='flex flex-col lg:flex-row lg:justify-between lg:mt-12'>
+                <div className="bg-blue-600 md:w-fit mt-12 lg:mt-0 flex flex-col p-3 lg:h-[240px] lg:w-[550px] overflow-hidden">
+                    <div className="flex flex-row text-white">
+                        <h1 className="lg:text-xl lg:leading-[40px] lg:font-bold">Take the discount for children under 6 years of age, for the first examination </h1>
+                        <ArrowRightIcon className="rotate-[-45deg] relative bottom-4 left-4 w-fit" style={{ color: 'white', fontSize: '52px' }} />
+                    </div>
+                    <div className="flex flex-row mt-12 justify-between items-center">
+                        <h1 className="text-white text-xl lg:text-3xl font-bold">50%</h1>
+                        {/* <button className="text-black bg-white border rounded-3xl p-2">Make an appointment</button> */}
+                        <div className='border p-3 rounded-full bg-white'>
+                            <LocalPhoneIcon style={{ color: 'blue' }} />
+                        </div>
+
+                    </div>
+                </div>
+                <div className='mt-6 lg:mt-0 lg:overflow-hidden lg:h-[260px] md:w-fit lg:w-[550px]'>
+                    <img src="https://wewishes.com/wp-content/uploads/2020/06/National-Doctors-Day-Quotes-3-1024x512.jpg" />
                 </div>
             </div>
 

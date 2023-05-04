@@ -47,6 +47,7 @@ import Menu from "./components/Menu";
 import AboutUs from './components/AboutUs';
 import Gallery from './components/Gallery';
 import Services from './components/Services';
+import Doctors from './components/Doctors';
 
 function App() {
 
@@ -79,7 +80,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className='max-w-[100vw] overflow-x-hidden'>
       <Menu activeSection={activeSection} handleScroll={handleScroll} />
       <section id="home">
         <HomePage />
@@ -90,8 +91,11 @@ function App() {
       <section id="Gallery">
         <Gallery />
       </section>
-      <section id="Services">
+      <section id="specialists">
         <Services />
+      </section>
+      <section id="doctors">
+        <Doctors />
       </section>
     </div>
   );

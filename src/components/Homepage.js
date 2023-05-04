@@ -6,10 +6,10 @@ import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 
 const HomePage = () => {
     return (
-        <div className="min-h-[100vh] w-[100vw] px-6 overflow-x-hidden lg:px-[7.5vw] md:px-[7vw]">
+        <div className="min-h-[100vh] max-w-[100vw] px-6 overflow-x-hidden lg:px-[7.5vw] md:px-[7vw]">
             <VideoBackground />
             <div className="flex flex-col lg:justify-between lg:items-center pr-8 lg:flex-row pt-6 lg:mt-40 ">
-                <h1 className="text-4xl font-bold flex lg:w-[50vw] lg:text-6xl lg:font-bold font-sans lg:text-white lg:font-normal lg:leading-[90px] leading-[49px] text-slate-300">Over a long period of work we have provided hundreds of thousands of eye care services</h1>
+                <h1 className="text-4xl font-bold flex lg:w-[50vw] lg:text-6xl font-sans lg:text-white lg:font-normal lg:leading-[90px] leading-[49px] text-slate-300">Over a long period of work we have provided hundreds of thousands of eye care services</h1>
                 <div className="flex flex-col mt-8">
                     <AvatarGroup max={5} className="w-fit  flex justify-start">
                         <Avatar alt="Remy Sharp" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdd7vPRNLgPIDeWNP3WkSnjFfVj5quhQWHDQ&usqp=CAU" />
@@ -36,7 +36,7 @@ const HomePage = () => {
                         <h1 className="text-[16px] font-bold lg:text-xl text-white">Professionals in their field, who can be trusted and get the best results.</h1>
                     </div>
                 </div>
-                <div className="bg-blue-600 mt-12 lg:mt-0 flex flex-col p-3 lg:h-[100%] lg:w-[450px] overflow-hidden">
+                <div className="bg-blue-600 md:w-fit mt-12 lg:mt-0 flex flex-col p-3 lg:h-[100%] lg:w-[450px] overflow-hidden">
                     <div className="flex flex-row text-white">
                         <h1 className="lg:text-xl lg:leading-[40px] lg:font-bold">Take the discount for the first visit of an opthalmologist</h1>
                         <ArrowRightIcon className="rotate-[-45deg] relative bottom-4 left-4 w-fit" style={{ color: 'white', fontSize: '52px' }} />

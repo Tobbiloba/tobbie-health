@@ -21,7 +21,7 @@ const styles = {
         position: 'fixed',
         right: 0,
         bottom: 0,
-        // minWidth: '100%',
+        maxWidth: '100vw',
         minHeight: '100%',
         width: '100vw',
         height: 'auto',
@@ -37,9 +37,9 @@ const VideoBackground = () => {
         progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
     };
     return (
-        <div style={styles.video} >
+        <div style={styles.video} className='max-w-[90vw]'>
             <div><img src='https://c1.wallpaperflare.com/preview/553/252/904/eye-shadow-light-face.jpg' className='z-[-1] h-[100vh] w-[150vw] flex md:hidden lg:hidden' /></div>
-            <div className="w-[100vw] h-[100vh] hidden md:flex lg:flex">
+            <div className="max-w-[100vw] h-[100vh] hidden md:flex lg:flex">
                 <Swiper
                     spaceBetween={30}
                     centeredSlides={true}

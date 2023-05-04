@@ -2,7 +2,7 @@ import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 function AboutUs() {
     return (
-        <div className="w-[100vw]  bg-white flex flex-col px-6 lg:px-[7.5vw] pt-16">
+        <div className="max-w-[100vw]  bg-white flex flex-col px-6 lg:px-[7.5vw] pt-16">
             <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between lg:items-start text-center  lg:mt-8">
                 <div>
                     <h1 className="text-2xl font-bold text-slate-600">About Us</h1>
