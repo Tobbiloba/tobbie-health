@@ -36,13 +36,6 @@ const doc = [
         img: 'https://m.media-amazon.com/images/M/MV5BNTMzNGNjOGEtYTNlNC00Mjg3LTlhMWUtZGQ1NzM2YTZjMDc0XkEyXkFqcGdeQXVyNDg4ODIzNDU@._V1_.jpg'
     },
     {
-        id: 6,
-        name: "Dr Jordan Allen",
-        experience: "3",
-        specialities: ['surgeon', 'Oncologist', 'Intern'],
-        img: ''
-    },
-    {
         id: 7,
         name: "Dr Jared Kalu",
         experience: "4",

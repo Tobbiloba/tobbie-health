@@ -94,9 +94,9 @@ function App() {
       <section id="specialists">
         <Services />
       </section>
-      <section id="doctors">
+      {/* <section id="doctors">
         <Doctors />
-      </section>
+      </section> */}
     </div>
   );
 }
