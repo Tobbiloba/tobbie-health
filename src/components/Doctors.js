@@ -53,7 +53,7 @@ function Doctors() {
                 <div>
                     <div>
                         <h1 className='text-[16px] flex text-center leading-4 lg:font-medium justify-center font-bold lg:text-5xl lg:text-slate-500 lg:justify-normal lg:text-left '>Surgeons and opthamologists</h1>
-                        <h1 className="mt-4 text-[12px] flex text-center">Our clinic employs only professional physicians. We select the best doctors on a regular basis</h1>
+                        <h1 className="mt-4 text-[12px] justify-center flex text-center">Our clinic employs only professional physicians. We select the best doctors on a regular basis</h1>
                     </div>
                     <div className="mt-12 flex item-center justify-center">
                         <button className="border px-6 py-12 rounded-full">All doctors <ArrowRightAltIcon className='ml-2' /></button>
@@ -62,14 +62,14 @@ function Doctors() {
                 <div className='mt-8'>
                     <div className='flex flex-wrap'>
                         {doc.map((doctor) => (
-                            <div key={doctor.id} className='mt-6'>
-                                {doctor.img && <img src={doctor.img} className='h-[250px] rounded-2xl w-screen' alt={doctor.name} />}
+                            <div key={doctor.id} className='mt-6 md:w-[330px] md:mr-4'>
+                                {doctor.img && <img src={doctor.img} className='h-[250px] rounded-2xl w-screen md:w-[340px] md:h-[320px]' alt={doctor.name} />}
                                 <h2 className='mt-4 text-xl font-bold'>{doctor.name}</h2>
                                 <p className='text-slate-500 mt-2'>Work experience - {doctor.experience} years</p>
                                 {/* <p>Specialities:</p> */}
                                 <ul className='flex flex-wrap mt-2'>
                                     {doctor.specialities.map((speciality, index) => (
-                                        <li key={index} className='border py-2 px-4 mr-4 mt-3 rounded-2xl text-slate-600'>{speciality}</li>
+                                        <li key={index} className='border py-2 px-4 mr-4 md:mr-2 mt-3 rounded-2xl text-slate-600'>{speciality}</li>
                                     ))}
                                 </ul>
                             </div>
