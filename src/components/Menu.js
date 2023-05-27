@@ -179,7 +179,7 @@ const Menu = (props) => {
                             <a href="#contact" className={props.activeSection === 'contact' ? 'active' : ''} onClick={handleNavClick}>Contact Us</a>
                         </div>
                         <div className='flex flex-row justify-evenly'>
-                            <Dropdown />
+                            {/* <Dropdown /> */}
                             <button className='border py-2 px-5 rounded-2xl cursor-pointer'>+234 70 8455 7988 <ArrowRightAltIcon /></button>
                         </div>
                     </div>
@@ -208,7 +208,7 @@ const Menu = (props) => {
                     </div>
                 </div>
                 <div className='flex'>
-                    <Dropdown />
+                    {/* <Dropdown /> */}
                     <button className='border border-slate-400 py-2 px-4 rounded-2xl cursor-pointer text-white ml-4'>+234 70 8455 7988 <ArrowRightAltIcon /></button>
                 </div>
             </div>

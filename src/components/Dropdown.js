@@ -1,36 +1,36 @@
-// import * as React from 'react';
+import React, { useState } from 'react';
 import Box from '@mui/material/Box';
-import { useState } from 'react';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
-function Dropdown() {
-    const [age, setAge] = useState('');
+function Dropdown(options) {
+    const [selectedOption, setSelectedOption] = useState('');
 
     const handleChange = (event) => {
-        setAge(event.target.value);
+        setSelectedOption(event.target.value);
     };
+
     return (
         <Box sx={{ minWidth: 120 }}>
             <FormControl fullWidth>
-                {/* <InputLabel id="demo-simple-select-label" className='text-white'>🇺🇸 ENG</InputLabel> */}
+                <InputLabel id="basic-select-label">{options.name}</InputLabel>
                 <Select
-                    labelId="demo-simple-select-label"
-                    id="demo-simple-select"
-                    value={age}
-                    label="Age"
+                    labelId="basic-select-label"
+                    id="basic-select"
+                    value={selectedOption}
+                    label={options.name}
                     onChange={handleChange}
-                    className='text-white'
+                    className="text-white"
                 >
-                    <MenuItem value={10}>🇺🇸 ENG</MenuItem>
-                    <MenuItem value={20}>Twenty</MenuItem>
-                    <MenuItem value={30}>Thirty</MenuItem>
+                    {options.options.map((option) => (
+                        <MenuItem key={option.id} value={option.option} className="text-white">{option.option}</MenuItem>
+                    ))}
                 </Select>
             </FormControl>
         </Box>
-    )
+    );
 }
 
 export default Dropdown;
