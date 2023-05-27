@@ -49,6 +49,7 @@ import Gallery from './components/Gallery';
 import Services from './components/Services';
 import Doctors from './components/Doctors';
 import Appointment from './components/Appointment';
+import FAQ from './components/FAQ';
 
 function App() {
 
@@ -100,6 +101,9 @@ function App() {
       </section>
       <section >
         <Appointment />
+      </section>
+      <section >
+        <FAQ />
       </section>
     </div>
   );
